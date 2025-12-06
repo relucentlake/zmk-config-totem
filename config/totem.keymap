@@ -19,15 +19,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         ss_hs_modmorph: ss_hs_modmorph {
@@ -56,6 +48,18 @@
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
+
+        hrmt: hrmt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRMT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <125>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -67,7 +71,7 @@
        &trans  &kp C        &kp M         &kp L         &kp ESC      &kp DEL        &kp G         &kp U         &kp F        &trans
        &kp I   &hrm LALT D  &hrm LCTRL N  &hrm LSHFT R  &kp K        &kp V          &hrm RSHFT S  &hrm RCTRL A  &hrm RALT H  &kp O
 &kp Q  &kp J   &kp P        &kp COMMA     &kp W         &trans       &trans         &kp B         &kp DOT       &kp Y        &kp X   &kp Z
-                            &kp TAB       &lt 1 T       &kp SPACE    &kp BACKSPACE  &lt 2 E       &kp ENTER
+                            &kp TAB       &hrmt 1 T     &kp SPACE    &kp BACKSPACE  &hrmt 2 E     &kp ENTER
             >;
         };
 
@@ -82,10 +86,10 @@
 
         layer_2 {
             bindings = <
-        &trans     &kp PIPE                &kp PERCENT                     &kp AMPERSAND           &trans    &trans  &kp EXCL     &kp UNDER     &kp QUESTION  &trans
-        &kp COLON  &mt LEFT_ALT BACKSLASH  &mt LEFT_CONTROL DOUBLE_QUOTES  &mt LSHFT SINGLE_QUOTE  &trans    &trans  &kp LEFT     &kp UP_ARROW  &kp RIGHT     &kp SEMICOLON
-&trans  &trans     &kp DOLLAR              &kp TILDE                       &kp GRAVE               &trans    &trans  &kp AT_SIGN  &kp DOWN      &kp HASH      &trans         &trans
-                                           &trans                          &trans                  &trans    &trans  &trans       &trans
+        &trans     &kp PIPE                &kp PERCENT                     &kp AMPERSAND           &trans        &trans  &kp EXCL     &kp UNDER     &kp QUESTION  &trans
+        &kp COLON  &mt LEFT_ALT BACKSLASH  &mt LEFT_CONTROL DOUBLE_QUOTES  &mt LSHFT SINGLE_QUOTE  &trans        &trans  &kp LEFT     &kp UP_ARROW  &kp RIGHT     &kp SEMICOLON
+&trans  &trans     &kp DOLLAR              &kp TILDE                       &kp GRAVE               &sys_reset    &trans  &kp AT_SIGN  &kp DOWN      &kp HASH      &trans         &trans
+                                           &trans                          &trans                  &trans        &trans  &trans       &trans
             >;
         };
     };
