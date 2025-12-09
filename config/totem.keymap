@@ -43,21 +43,20 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <125>;
+            tapping-term-ms = <400>;
+            quick-tap-ms = <400>;
+            require-prior-idle-ms = <400>;
             bindings = <&kp>, <&kp>;
         };
 
         hrmt: hrmt {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRMT";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <125>;
+            tapping-term-ms = <400>;
+            quick-tap-ms = <400>;
+            require-prior-idle-ms = <400>;
             flavor = "tap-preferred";
         };
     };
