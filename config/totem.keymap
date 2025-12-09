@@ -86,10 +86,10 @@
 
         layer_2 {
             bindings = <
-        &trans     &kp PIPE                &kp PERCENT                     &kp AMPERSAND           &trans        &trans  &kp EXCL     &kp UNDER     &kp QUESTION  &trans
-        &kp COLON  &mt LEFT_ALT BACKSLASH  &mt LEFT_CONTROL DOUBLE_QUOTES  &mt LSHFT SINGLE_QUOTE  &trans        &trans  &kp LEFT     &kp UP_ARROW  &kp RIGHT     &kp SEMICOLON
-&trans  &trans     &kp DOLLAR              &kp TILDE                       &kp GRAVE               &sys_reset    &trans  &kp AT_SIGN  &kp DOWN      &kp HASH      &trans         &trans
-                                           &trans                          &trans                  &trans        &trans  &trans       &trans
+        &kp LEFT_ALT  &hrm LEFT_CONTROL PIPE  &hrm LEFT_GUI PERCENT  &hrm LEFT_SHIFT AMPS  &trans        &trans  &hrm RIGHT_SHIFT EXCL  &hrm RIGHT_GUI UNDER  &hrm RIGHT_CONTROL QUESTION  &kp RIGHT_ALT
+        &kp COLON     &kp BACKSLASH           &kp DOUBLE_QUOTES      &kp SINGLE_QUOTE      &trans        &trans  &kp LEFT               &kp UP_ARROW          &kp RIGHT                    &kp SEMICOLON
+&trans  &trans        &kp DOLLAR              &kp TILDE              &kp GRAVE             &sys_reset    &trans  &kp AT_SIGN            &kp DOWN              &kp HASH                     &trans         &trans
+                                              &trans                 &trans                &trans        &trans  &trans                 &trans
             >;
         };
     };
