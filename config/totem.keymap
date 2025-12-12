@@ -85,10 +85,10 @@
 
         layer_2 {
             bindings = <
-        &trans        &kp PIPE                 &kp UP                &kp AMPS                 &trans        &trans  &kp EXCL             &kp TILDE             &kp QUESTION             &trans
-        &kp COLON     &kp LEFT                 &kp DOWN              &kp RIGHT                &trans        &trans  &kp SINGLE_QUOTE     &kp DOUBLE_QUOTES     &kp BACKSLASH            &kp SEMICOLON
-&trans  &kp LEFT_ALT  &hrm LEFT_CONTROL GRAVE  &hrm LEFT_GUI DOLLAR  &hrm LEFT_SHIFT PERCENT  &sys_reset    &trans  &hrm RIGHT_SHIFT AT  &hrm RIGHT_GUI UNDER  &hrm RIGHT_CONTROL HASH  &kp RIGHT_ALT  &trans
-                                               &trans                &trans                   &trans        &trans  &trans               &trans
+        &kp DOLLAR     &kp PIPE          &kp UP        &kp AMPS               &kp C_VOLUME_UP      &kp C_BRI_UP     &kp PERCENT          &kp TILDE          &kp AT             &kp UNDER
+        &kp BACKSLASH  &kp LEFT          &kp DOWN      &kp RIGHT              &kp C_VOLUME_DOWN    &kp C_BRI_DN     &kp SINGLE_QUOTE     &kp DOUBLE_QUOTES  &kp QUESTION       &kp EXCL
+&trans  &kp LEFT_ALT   &kp LEFT_CONTROL  &kp LEFT_GUI  &hrm LEFT_SHIFT GRAVE  &kp CLCK             &kp PRINTSCREEN  &hrm RIGHT_SHIFT AT  &kp RIGHT_GUI      &kp RIGHT_CONTROL  &kp RIGHT_ALT  &trans
+                                         &trans        &trans                 &trans               &trans           &trans               &trans
             >;
         };
     };
