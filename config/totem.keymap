@@ -69,26 +69,26 @@
             bindings = <
             &kp Q            &kp C                &kp M                &kp L              &kp ESC      &kp DEL        &kp W               &kp U               &kp F                 &kp Z
             &kp I            &kp D                &kp N                &kp R              &kp K        &kp V          &kp S               &kp A               &kp H                 &kp O
-&kp K_COPY  &hrm LEFT_ALT J  &hrm LEFT_CONTROL P  &hrm LEFT_GUI COMMA  &hrm LEFT_SHIFT G  &trans       &trans         &hrm RIGHT_SHIFT B  &hrm RIGHT_GUI DOT  &hrm RIGHT_CONTROL Y  &hrm RIGHT_ALT X  &kp K_PASTE
+&kp K_COPY  &hrm LEFT_ALT J  &hrm LEFT_CONTROL P  &hrm LEFT_GUI COMMA  &hrm LEFT_SHIFT G  &kp SEMI     &kp COLON      &hrm RIGHT_SHIFT B  &hrm RIGHT_GUI DOT  &hrm RIGHT_CONTROL Y  &hrm RIGHT_ALT X  &kp K_PASTE
                                                   &kp TAB              &hrmt 1 T          &kp SPACE    &kp BACKSPACE  &hrmt 2 E           &kp ENTER
             >;
         };
 
         layer_1 {
             bindings = <
-        &kp LEFT_ALT  &hrm LEFT_CONTROL CARET  &hrm LEFT_GUI LESS_THAN  &hrm LEFT_SHIFT GREATER_THAN  &trans    &trans        &hrm RIGHT_SHIFT RIGHT_PARENTHESIS  &hrm RIGHT_GUI RIGHT_BRACKET  &hrm LEFT_CONTROL RIGHT_BRACE  &kp RIGHT_ALT
-        &kp ASTERISK  &kp PLUS                 &kp MINUS                &kp EQUAL                     &kp N5    &kp NUMBER_6  &kp LEFT_PARENTHESIS                &kp LEFT_BRACKET              &kp LEFT_BRACE                 &kp SLASH
-&trans  &kp NUMBER_1  &kp NUMBER_2             &kp NUMBER_3             &kp NUMBER_4                  &trans    &trans        &kp NUMBER_7                        &kp N8                        &kp N9                         &kp N0         &trans
+        &kp NUMBER_1  &kp NUMBER_2             &kp NUMBER_3             &kp NUMBER_4                  &trans    &trans        &kp N7                              &kp N8                        &kp N9                          &kp N0
+        &kp ASTERISK  &kp PLUS                 &kp MINUS                &kp EQUAL                     &kp N5    &kp NUMBER_6  &kp LEFT_PARENTHESIS                &kp LEFT_BRACKET              &kp LEFT_BRACE                  &kp SLASH
+&trans  &kp LEFT_ALT  &hrm LEFT_CONTROL CARET  &hrm LEFT_GUI LESS_THAN  &hrm LEFT_SHIFT GREATER_THAN  &trans    &trans        &hrm RIGHT_SHIFT RIGHT_PARENTHESIS  &hrm RIGHT_GUI RIGHT_BRACKET  &hrm RIGHT_CONTROL RIGHT_BRACE  &kp RIGHT_ALT  &trans
                                                &trans                   &trans                        &trans    &trans        &trans                              &trans
             >;
         };
 
         layer_2 {
             bindings = <
-        &kp LEFT_ALT  &hrm LEFT_CONTROL PIPE  &hrm LEFT_GUI PERCENT  &hrm LEFT_SHIFT AMPS  &trans        &trans  &hrm RIGHT_SHIFT EXCL  &hrm RIGHT_GUI UNDER  &hrm RIGHT_CONTROL QUESTION  &kp RIGHT_ALT
-        &kp COLON     &kp BACKSLASH           &kp DOUBLE_QUOTES      &kp SINGLE_QUOTE      &trans        &trans  &kp LEFT               &kp UP_ARROW          &kp RIGHT                    &kp SEMICOLON
-&trans  &trans        &kp DOLLAR              &kp TILDE              &kp GRAVE             &sys_reset    &trans  &kp AT_SIGN            &kp DOWN              &kp HASH                     &trans         &trans
-                                              &trans                 &trans                &trans        &trans  &trans                 &trans
+        &trans        &kp PIPE                 &kp UP                &kp AMPS                 &trans        &trans  &kp EXCL             &kp TILDE             &kp QUESTION             &trans
+        &kp COLON     &kp LEFT                 &kp DOWN              &kp RIGHT                &trans        &trans  &kp SINGLE_QUOTE     &kp DOUBLE_QUOTES     &kp BACKSLASH            &kp SEMICOLON
+&trans  &kp LEFT_ALT  &hrm LEFT_CONTROL GRAVE  &hrm LEFT_GUI DOLLAR  &hrm LEFT_SHIFT PERCENT  &sys_reset    &trans  &hrm RIGHT_SHIFT AT  &hrm RIGHT_GUI UNDER  &hrm RIGHT_CONTROL HASH  &kp RIGHT_ALT  &trans
+                                               &trans                &trans                   &trans        &trans  &trans               &trans
             >;
         };
     };
