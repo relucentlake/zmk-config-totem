@@ -16,6 +16,7 @@
 #define ADJU  3
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -76,10 +77,10 @@
 
         layer_1 {
             bindings = <
-        &kp NUMBER_1  &kp NUMBER_2             &kp NUMBER_3             &kp NUMBER_4                  &trans    &trans        &kp N7                              &kp N8                        &kp N9                          &kp N0
-        &kp ASTERISK  &kp PLUS                 &kp MINUS                &kp EQUAL                     &kp N5    &kp NUMBER_6  &kp LEFT_PARENTHESIS                &kp LEFT_BRACKET              &kp LEFT_BRACE                  &kp SLASH
-&trans  &kp LEFT_ALT  &hrm LEFT_CONTROL CARET  &hrm LEFT_GUI LESS_THAN  &hrm LEFT_SHIFT GREATER_THAN  &trans    &trans        &hrm RIGHT_SHIFT RIGHT_PARENTHESIS  &hrm RIGHT_GUI RIGHT_BRACKET  &hrm RIGHT_CONTROL RIGHT_BRACE  &kp RIGHT_ALT  &trans
-                                               &trans                   &trans                        &trans    &trans        &trans                              &trans
+        &kp NUMBER_1  &kp NUMBER_2             &kp NUMBER_3             &kp NUMBER_4                  &bt BT_NXT    &trans        &kp N7                              &kp N8                        &kp N9                          &kp N0
+        &kp ASTERISK  &kp PLUS                 &kp MINUS                &kp EQUAL                     &kp N5        &kp NUMBER_6  &kp LEFT_PARENTHESIS                &kp LEFT_BRACKET              &kp LEFT_BRACE                  &kp SLASH
+&trans  &kp LEFT_ALT  &hrm LEFT_CONTROL CARET  &hrm LEFT_GUI LESS_THAN  &hrm LEFT_SHIFT GREATER_THAN  &trans        &trans        &hrm RIGHT_SHIFT RIGHT_PARENTHESIS  &hrm RIGHT_GUI RIGHT_BRACKET  &hrm RIGHT_CONTROL RIGHT_BRACE  &kp RIGHT_ALT  &trans
+                                               &trans                   &trans                        &trans        &trans        &trans                              &trans
             >;
         };
 
