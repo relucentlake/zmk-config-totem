@@ -67,7 +67,7 @@
         base {
             label = "BASE";
             bindings = <
-            &kp Q            &kp C                &kp M                &kp L              &kp ESC      &kp DEL        &kp W               &kp U               &kp F                 &kp Z
+            &kp Q            &kp C                &kp M                &kp L              &none        &kp DEL        &kp W               &kp U               &kp F                 &kp Z
             &kp I            &kp D                &kp N                &kp R              &kp K        &kp V          &kp S               &kp A               &kp H                 &kp O
 &kp K_COPY  &hrm LEFT_ALT J  &hrm LEFT_CONTROL P  &hrm LEFT_GUI COMMA  &hrm LEFT_SHIFT G  &kp SEMI     &kp COLON      &hrm RIGHT_SHIFT B  &hrm RIGHT_GUI DOT  &hrm RIGHT_CONTROL Y  &hrm RIGHT_ALT X  &kp K_PASTE
                                                   &kp TAB              &hrmt 1 T          &kp SPACE    &kp BACKSPACE  &hrmt 2 E           &kp ENTER
